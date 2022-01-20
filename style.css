@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* ------Primary------ */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youTube: hsl(348, 97%, 39%);
+
+  /* Dark Theme */
+  --toggle-dark: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+
+  /* Light Theme */
+  --toggle-light: hsl(230, 22%, 74%);
+
+  /* Dark Theme */
+  --backg: hsl(0, 0%, 100%);
+  /* --very-dark-blue: hsl(230, 17%, 14%); (BG) */
+  --very-dark-blue-top: hsl(232, 19%, 15%); /*(Top BG Pattern)*/
+  --dark-desaturated-blue: hsl(228, 28%, 20%); /*(Card BG)*/
+  --desaturated-blue: hsl(228, 34%, 66%); /*(Text)*/
+
+  /* Light Theme */
+  --white: hsl(0, 0%, 100%); /*(BG)*/
+  --very-pale-blue: hsl(225, 100%, 98%); /*(Top BG Pattern)*/
+  --light-grayish-blue: hsl(227, 47%, 96%); /*(Card BG)*/
+  --dark-grayish-blue: hsl(228, 12%, 44%); /*(Text)*/
+  --very-dark-blue: hsl(230, 17%, 14%); /*(Text)*/
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--backg);
+}
+.back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30vh;
+  width: 100vw;
+  background-color: var(--very-pale-blue);
+  z-index: -1;
+}
+.first h1 {
+  font-weight: 800;
+}
+.left p {
+  color: var(--dark-grayish-blue);
+  margin-top: 5px;
+  font-weight: 600;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  justify-content: space-between;
+  height: 100vh;
+  width: 75vw;
+  margin: auto;
+  padding: 10px 0px;
+  font-family: "Inter", sans-serif;
+  transition: 0.5s;
+  color: var(--dark-grayish-blue);
+}
+.first,
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+  cursor: pointer;
+}
+.f1,
+.f2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.fours {
+  height: 14rem;
+  width: 18rem;
+  background-color: var(--light-grayish-blue);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.fours h1,
+.e2 h2,
+.left h1 {
+  color: var(--very-dark-blue);
+}
+
+.fours:hover,
+.eights:hover {
+  background-color: var(--toggle-light);
+}
+.s1,
+.s2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eights {
+  height: 7rem;
+  width: 18rem;
+  background-color: var(--light-grayish-blue);
+  border-radius: 5px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.first1 {
+  border-top: 4px solid var(--facebook);
+}
+.first2 {
+  border-top: 4px solid var(--twitter);
+}
+.first3 {
+  border-top: 4px solid transparent;
+  border-radius: 5px;
+  border-image: var(--instagram);
+  border-image-slice: 1;
+}
+.first4 {
+  border-top: 4px solid var(--youTube);
+}
+
+.head {
+  display: flex;
+  color: var(--dark-grayish-blue);
+}
+.name {
+  margin: 0px 10px;
+  font-weight: 600;
+}
+.middle h1 {
+  font-size: 45px;
+  margin: 5px;
+}
+.middle p {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--dark-grayish-blue);
+  /* margin-left: 3px; */
+}
+.lower {
+  font-weight: 600;
+  color: var(--lime-green);
+}
+.lower img {
+  height: 6px;
+  margin: 0px 4px;
+  margin-bottom: 2px;
+}
+.first4 .lower {
+  color: var(--bright-red);
+}
+.e1,
+.e2 {
+  display: flex;
+  justify-content: space-between;
+}
+.e1 p {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+  font-size: 15px;
+}
+.e2 h2 {
+  font-size: 25px;
+}
+.e2 p {
+  color: var(--lime-green);
+  font-weight: 600;
+}
+.e2 img {
+  height: 6px;
+  margin: 0px 4px;
+  margin-bottom: 2px;
+}
+.over {
+  color: var(--dark-grayish-blue);
+}
+.secondF2 .e2 p,
+.secondS3 .e2 p,
+.secondS4 .e2 p {
+  color: var(--bright-red);
+}
+.attribution {
+  text-align: center;
+}
+.right {
+  display: flex;
+}
+.mode {
+  margin: 5px 15px;
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+/* =======================toggle====================== */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--toggle-dark);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  background-color: var(--dark-desaturated-blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 85vw;
+  }
+  .fours {
+    width: 14rem;
+    height: 11rem;
+  }
+  .middle h1 {
+    font-size: 35px;
+  }
+  .eights {
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 90vw;
+  }
+  .fours {
+    width: 12rem;
+    height: 10rem;
+  }
+  .middle h1 {
+    font-size: 30px;
+  }
+  .middle p {
+    font-size: 12px;
+  }
+  .eights {
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+  .first h1 {
+    font-size: 25px;
+  }
+  .first,
+  .second {
+    height: 100%;
+  }
+  .f2 {
+    flex-direction: column;
+  }
+  .f1 {
+    flex-direction: column;
+  }
+  .s1,
+  .s2 {
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .back {
+    width: 100%;
+  }
+  .fours,
+  .eights {
+    width: 70vw;
+    height: 11rem;
+    margin: 10px;
+  }
+  .right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 2px solid var(--desaturated-blue);
+    padding: 20px 0px;
+  }
+}
+
+/* =====================Dark Mode================== */
+
+.dark {
+  background-color: var(--very-dark-blue);
+}
